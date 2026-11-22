@@ -3,6 +3,321 @@
     "enabled": false,
     "manipulators": [
         {
+            "description": "Ctrl+Left switches to the previous browser tab.",
+            "type": "basic",
+            "from": {
+                "key_code": "left_arrow",
+                "modifiers": {
+                    "mandatory": [
+                        "control"
+                    ],
+                    "optional": [
+                        "caps_lock"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "tab",
+                    "modifiers": [
+                        "left_control",
+                        "left_shift"
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                        "^com\\.google\\.Chrome$"
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Ctrl+Right switches to the next browser tab.",
+            "type": "basic",
+            "from": {
+                "key_code": "right_arrow",
+                "modifiers": {
+                    "mandatory": [
+                        "control"
+                    ],
+                    "optional": [
+                        "caps_lock"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "tab",
+                    "modifiers": [
+                        "left_control"
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                        "^com\\.google\\.Chrome$"
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Ctrl+H opens Chrome History.",
+            "type": "basic",
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "mandatory": [
+                        "control"
+                    ],
+                    "optional": [
+                        "caps_lock"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "y",
+                    "modifiers": [
+                        "left_command"
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                        "^com\\.google\\.Chrome$"
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Ctrl+J opens Chrome Downloads.",
+            "type": "basic",
+            "from": {
+                "key_code": "j",
+                "modifiers": {
+                    "mandatory": [
+                        "control"
+                    ],
+                    "optional": [
+                        "caps_lock"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "j",
+                    "modifiers": [
+                        "left_command",
+                        "left_shift"
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                        "^com\\.google\\.Chrome$"
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Ctrl+H opens Edge History.",
+            "type": "basic",
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "mandatory": [
+                        "control"
+                    ],
+                    "optional": [
+                        "caps_lock"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "y",
+                    "modifiers": [
+                        "left_command"
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                        "^com\\.microsoft\\.edgemac$"
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Ctrl+J opens Edge Downloads.",
+            "type": "basic",
+            "from": {
+                "key_code": "j",
+                "modifiers": {
+                    "mandatory": [
+                        "control"
+                    ],
+                    "optional": [
+                        "caps_lock"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "l",
+                    "modifiers": [
+                        "left_command",
+                        "left_option"
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                        "^com\\.microsoft\\.edgemac$"
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Ctrl+H opens Firefox History.",
+            "type": "basic",
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "mandatory": [
+                        "control"
+                    ],
+                    "optional": [
+                        "caps_lock"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "h",
+                    "modifiers": [
+                        "left_command",
+                        "left_shift"
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                        "^org\\.mozilla\\.firefox$"
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Ctrl+J opens Firefox Downloads.",
+            "type": "basic",
+            "from": {
+                "key_code": "j",
+                "modifiers": {
+                    "mandatory": [
+                        "control"
+                    ],
+                    "optional": [
+                        "caps_lock"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "j",
+                    "modifiers": [
+                        "left_command"
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                        "^org\\.mozilla\\.firefox$"
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Ctrl+H opens Safari History.",
+            "type": "basic",
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "mandatory": [
+                        "control"
+                    ],
+                    "optional": [
+                        "caps_lock"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "y",
+                    "modifiers": [
+                        "left_command"
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                        "^com\\.apple\\.Safari$"
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Ctrl+J opens Safari Downloads.",
+            "type": "basic",
+            "from": {
+                "key_code": "j",
+                "modifiers": {
+                    "mandatory": [
+                        "control"
+                    ],
+                    "optional": [
+                        "caps_lock"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "l",
+                    "modifiers": [
+                        "left_command",
+                        "left_option"
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                        "^com\\.apple\\.Safari$"
+                    ]
+                }
+            ]
+        },
+        {
             "conditions": [
                 {
                     "bundle_identifiers": [
