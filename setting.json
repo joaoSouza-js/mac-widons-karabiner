@@ -1,6 +1,6 @@
 {
     "description": "Windows Keyboard for Mac: complete Windows-style shortcuts (all keyboards)",
-    "enabled": false,
+    "enabled": true,
     "manipulators": [
         {
             "description": "Ctrl+Left switches to the previous browser tab.",
